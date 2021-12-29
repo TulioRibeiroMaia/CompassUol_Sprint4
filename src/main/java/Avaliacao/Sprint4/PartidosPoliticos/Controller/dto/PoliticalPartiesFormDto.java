@@ -1,11 +1,15 @@
 package Avaliacao.Sprint4.PartidosPoliticos.Controller.dto;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import Avaliacao.Sprint4.PartidosPoliticos.Entity.Ideology;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+@Data
+@AllArgsConstructor
 public class PoliticalPartiesFormDto {
 
     @NotBlank
@@ -15,7 +19,7 @@ public class PoliticalPartiesFormDto {
     private String initials;
 
     @NotNull
-    private Enum ideology;
+    private Ideology ideology;
 
     @NotNull
     private LocalDate foundationDate;

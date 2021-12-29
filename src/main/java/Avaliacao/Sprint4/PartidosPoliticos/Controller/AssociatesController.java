@@ -3,7 +3,7 @@ package Avaliacao.Sprint4.PartidosPoliticos.Controller;
 import Avaliacao.Sprint4.PartidosPoliticos.Controller.dto.AssociatesDto;
 import Avaliacao.Sprint4.PartidosPoliticos.Controller.dto.AssociatesFormDto;
 import Avaliacao.Sprint4.PartidosPoliticos.Entity.Associates;
-import Avaliacao.Sprint4.PartidosPoliticos.Entity.PoliticalOfficeEnum;
+import Avaliacao.Sprint4.PartidosPoliticos.Entity.PoliticalOffice;
 import Avaliacao.Sprint4.PartidosPoliticos.repository.AssociatesRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,9 +40,8 @@ public class AssociatesController {
     }
 
     //Lista os associados com filtro por cargo político
-    //ainda falta ordenar por nome!!!(Lembrar de tirar esse comentário)
     @GetMapping
-    public List<AssociatesDto> listByFilter(@RequestParam(required = false) PoliticalOfficeEnum politicalOffice) {
+    public List<AssociatesDto> listByFilter(@RequestParam(required = false) PoliticalOffice politicalOffice) {
         if (politicalOffice == null) {
             List<Associates> associates = associatesRepository.findAll();
             return associates.stream().map(associate -> modelMapper.map(associate, AssociatesDto.class)).collect(Collectors.toList());

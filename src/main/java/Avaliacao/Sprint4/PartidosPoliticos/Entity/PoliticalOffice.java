@@ -1,6 +1,6 @@
 package Avaliacao.Sprint4.PartidosPoliticos.Entity;
 
-public enum PoliticalOfficeEnum {
+public enum PoliticalOffice {
 
     VEREADOR,
     PREFEITO,
@@ -10,5 +10,4 @@ public enum PoliticalOfficeEnum {
     GOVERNADOR,
     PRESIDENTE,
     NENHUM
-
 }

@@ -1,6 +1,6 @@
 package Avaliacao.Sprint4.PartidosPoliticos.Controller;
 
-import Avaliacao.Sprint4.PartidosPoliticos.Controller.dto.AssociatesDto;
+
 import Avaliacao.Sprint4.PartidosPoliticos.Controller.dto.PoliticalPartiesDto;
 import Avaliacao.Sprint4.PartidosPoliticos.Controller.dto.PoliticalPartiesFormDto;
 import Avaliacao.Sprint4.PartidosPoliticos.Entity.Ideology;
@@ -39,7 +39,6 @@ public class PoliticalPartiesController {
         URI uri = uriBuilder.path(("/partidos")).buildAndExpand(politicalParties.getId()).toUri();
         return ResponseEntity.created(uri).body(modelMapper.map(politicalParties, PoliticalPartiesDto.class));
     }
-
 
     //Lista os partidos com filtro por ideologia
     @GetMapping

@@ -15,7 +15,7 @@ public class PoliticalParties {
     private String partiesName;
     private String initials;
     @Enumerated(EnumType.STRING)
-    private Enum ideology;
+    private Ideology ideology;
     private LocalDate foundationDate;
 
 }

@@ -1,7 +1,6 @@
 package Avaliacao.Sprint4.PartidosPoliticos.Entity;
 
-public enum GenderEnum {
-
+public enum Gender {
     MASCULINO,
     FEMININO
 }

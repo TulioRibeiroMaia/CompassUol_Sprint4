@@ -16,12 +16,12 @@ public class Associates {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private PoliticalOfficeEnum politicalOfficeEnum;
+    private PoliticalOffice politicalOffice;
 
     private LocalDate birthDate;
 
     @Enumerated(EnumType.STRING)
-    private GenderEnum gender;
+    private Gender gender;
 
     @ManyToOne
     private PoliticalParties politicalParties;
