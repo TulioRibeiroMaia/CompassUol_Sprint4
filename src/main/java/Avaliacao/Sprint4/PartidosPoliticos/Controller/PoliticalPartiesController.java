@@ -1,6 +1,5 @@
 package Avaliacao.Sprint4.PartidosPoliticos.Controller;
 
-
 import Avaliacao.Sprint4.PartidosPoliticos.Controller.dto.PoliticalPartiesDto;
 import Avaliacao.Sprint4.PartidosPoliticos.Controller.dto.PoliticalPartiesFormDto;
 import Avaliacao.Sprint4.PartidosPoliticos.Entity.Ideology;

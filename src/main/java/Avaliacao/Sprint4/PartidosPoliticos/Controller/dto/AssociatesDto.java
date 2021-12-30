@@ -2,7 +2,6 @@ package Avaliacao.Sprint4.PartidosPoliticos.Controller.dto;
 
 import Avaliacao.Sprint4.PartidosPoliticos.Entity.Gender;
 import Avaliacao.Sprint4.PartidosPoliticos.Entity.PoliticalOffice;
-import Avaliacao.Sprint4.PartidosPoliticos.Entity.PoliticalParties;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -27,5 +26,4 @@ public class AssociatesDto {
 
     private Gender gender;
 
-    private PoliticalParties politicalParties;
 }
