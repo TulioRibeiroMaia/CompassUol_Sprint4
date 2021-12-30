@@ -29,21 +29,6 @@ class AssociatesControllerTest {
     @Autowired
     ObjectMapper objectMapper;
 
-    //Deve retornar um 400 se o gênero for diferente de Masculino e Feminino
-    @Test
-    public void associatesTestRegister() throws Exception {
-
-        URI uri = new URI("/associados");
-        String json = "{\"name\": \"Joana\", \"birthDate\": \"2000-01-05\",\"gender\": \"OTHER\", \"politicalParties\": \"VEREADOR}\"";
-
-        mockMvc.perform(post(uri)
-                        .content(json)
-                        .contentType(MediaType.APPLICATION_JSON))
-                    .andExpect(MockMvcResultMatchers
-                        .status()
-                        .is(400));
-    }
-
     @Test
     public void listByFilterGetAll() throws Exception {
         mockMvc.perform(get("/associados"))
